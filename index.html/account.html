@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+
+
+    
+
+  <!-- BOOTSTRAP -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+  <!-- FONT AWSOME -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+  <!-- GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+
+
+
+
+  <!-- STYLE SHEET.CSS -->
+
+
+  <link rel="stylesheet" href="style1.css">
+
+
+
+</head>
+<body>
+    
+
+    
+
+    <!-- nav bar -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="#">
+                <img src="image/logo.png" alt="" width="110" height="44"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5" id="nav1">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="prodduct.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="account.html">Account</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 40px;">
+            <a class="nav-link active" aria-current="page" href="shopping cart.html"><img src="image/cart.png" alt="" width="30px"></a>
+          </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- main portion -->
+
+    <div class="background mt-3">
+
+
+
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row d-flex justify-content-around">
+                <div class="col-6">
+                    <img src="image/image1.png" style="max-width: 100%;">
+                </div>
+
+
+                <!-- <div class="div2 col col-lg-5 d-flex justify-content-around"> -->
+                <div class="col-6">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="passowrd" placeholder="Passowrd">
+                             <a href="">Forgot passowrd</a>
+                             <button type="submit" class="btn">Login</button>
+                            <button type="submit" class="btn">Register</button>
+                            
+                        </form>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+  
+<!-- script -->
+
+     <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            } else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+    <!--js for the toggle form -->
+
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+    </script>
+
+
+
+
+
+<!-- footer -->
+
+
+<div class="footer mt-5 text-center p-3">
+  <div class="foot1 d-md-flex align-items-center justify-content-evenly container">
+    <div class="download mt-5">
+      <h4 class="fs-3">Download Our App</h4>
+      <p class="fs-6 mt-3 mb-3">Download App for Android and ios mobile phone.</p>
+      <img src="image/play-store.png" alt="" width="100px" height="40px">
+      <img src="image/app-store.png" alt="" width="100px" height="40px">
+    </div>
+    <div class="redstore mt-5 text-center">
+      <img src="image/logo-white.png" alt="" height="60px">
+      <p class="fs-6 mt-3">Our Purpose Is To Sustainably Make th Pleasure and <br>
+        Benefits of Sports Accessible to the Many.</p>
+    </div>
+    <div class="links fs-3 mt-5">
+      <h4>Useful Links</h4>
+      <p class="fs-6 mt-3">coupons
+        <br>Blog Post <br>Return Policy <br>Join affliate
+      </p>
+    </div>
+    <div class="follow fs-3 mt-5">
+      <h4>Follow Us</h4>
+      <p class="fs-6 mt-3">Facebook
+        <br>Twitter <br>Instagram <br>Youtube
+      </p>
+    </div>
+  </div>
+  <hr class="container">
+  <p class="text-center fs-6"> &copy Copyright 2025 - Muhammed shabeel k</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+.container-fluid {
+  background: radial-gradient(white,brown);
+  /* height: 1130px; */
+  padding-top: 12px;
+  padding-bottom: 40px;
+}
+
+.row {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.text1 {
+  color: aliceblue;
+  font-weight: 900;
+  font-size: 50px;
+  /* text-align: center; */
+  margin-top: 210px;
+  margin-left: 15px;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  min-width: 300px;
+}
+
+.col-sm-4 {
+  min-width: 250px;
+  margin-bottom: 60px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.text-center {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.orange-line {
+  display: block;
+  width: 110px;
+  height: 5px;
+  background-color: orangered;
+  margin: 8px auto 0;
+  border-radius: 10px;
+}
+
+.col-sm-3.col-sm-4 {
+  background-color: #ffffff;
+  /* color: rgb(0, 0, 0); */
+  padding: 10px 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.col-sm-3:hover {
+  transform: scale(1.05);
+  background-color: #ffffff;
+}
+
+.col-sm-4:hover {
+  transform: scale(1.05);
+  /* background-color: #ffffff; */
+}
+
+.hover-img {
+  display: flex;
+  justify-content: space-;
+  gap: 20px;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.hover-img:hover {
+  filter: grayscale(0%);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container-xxl {
+  margin-top: 60px;
+  background: radial-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  color: white;
+}
+
+.line {
+  display: flex;
+  /* align-items:center; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.down {
+  padding-top: 50px;
+  /* text-align: center; */
+}
+
+.redstore {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.link {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.follow {
+  padding-top: 50px;
+  text-align: center;
+
+}
+
+.white-line {
+  display: block;
+  width: auto;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.559);
+  margin: 8px auto 0;
+  border-radius: 10px;
+}
+
+.copy {
+  text-align: center;
+}

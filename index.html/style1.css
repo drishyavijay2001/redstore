@@ -1,0 +1,414 @@
+
+
+
+/* styling */
+
+* { 
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+.ullink {
+  font-size: 20px;
+  color: brown;
+}
+
+#nav1 {
+  font-size: 20px;
+
+}
+
+.background {
+  background: radial-gradient(rgb(228, 151, 164), rgb(249, 249, 249));
+
+}
+
+.fontt {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+}
+
+.tit {
+  border-bottom: 8px solid orangered;
+  border-radius: 5px;
+  width: 150px;
+  margin: auto;
+}
+
+.stars {
+  color: orangered;
+}
+
+.box:hover {
+
+  border: 1px solid rgb(209, 200, 200);
+  height: 150px;
+  cursor: pointer;
+  transition: transform .8s;
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+.fnt2 {
+  font-family: "Rambla", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.qts {
+  color: orangered;
+  text-align: center;
+}
+
+.comment {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.brand1 {
+  filter: grayscale(100%);
+}
+
+.brand1:hover {
+  filter: grayscale(0%);
+
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: auto;
+}
+
+.head {
+  margin-top: 100px;
+}
+.container-xxl {
+  margin-top: 60px;
+  background: radial-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  color: white;
+}
+
+.line {
+  display: flex;
+  /* align-items:center; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.down {
+  padding-top: 50px;
+  /* text-align: center; */
+}
+
+.redstore {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.link {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.follow {
+  padding-top: 50px;
+  text-align: center;
+
+}
+
+.white-line {
+  display: block;
+  width: auto;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.559);
+  margin: 8px auto 0;
+  border-radius: 10px;
+}
+
+.copy {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* shopping cart */
+
+
+.cart-page {
+    margin: 30px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; 
+
+}
+
+.cart-info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: var(--highlight-color);
+    font-weight: normal;
+    background-color: orangered;
+}
+
+td {
+    padding: 10px 5px;
+}
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: var(--highlight-color);
+    font-size: 12px;
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid orangered;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+
+
+/* Account */
+
+/* .account-page {
+    padding: 50px 0;
+    background: radial-gradient(#fff, var(--bg-color));
+}
+
+.form-container {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color: orangered;
+}
+
+form .btn:focus {
+    outline: none;
+}
+
+#LoginForm {
+    left: -300px;
+}
+
+#RegForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: orangered;
+    height: 3px;
+    margin-top: 8px;
+    transition: transform 1s;
+} */
+
+.account-page {
+    padding: 50px 0;
+    background: radial-gradient(#fff, var(--bg-color));
+}
+
+.form-container {
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.form-container span {
+    font-weight: bold;
+    padding: 0 10px;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+
+.form-btn {
+    display: inline-block;
+}
+
+.form-container form {
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+
+form input {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+
+form .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 20px;
+    background-color: orangered;
+}
+
+form .btn:focus {
+    outline: none;
+}
+
+#LoginForm {
+    left: -300px;
+}
+
+#RegForm {
+    left: 0;
+}
+
+form a {
+    font-size: 12px;
+}
+
+#Indicator {
+    width: 100px;
+    border: none;
+    background: orangered;
+    height: 3px;
+    margin-top: 8px;
+    transition: transform 1s;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .row.d-flex.justify-content-around {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-6 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .form-container {
+        width: 90%;
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .form-container form {
+        position: static;
+        transform: none !important;
+        top: auto;
+    }
+
+    #LoginForm,
+    #RegForm {
+        left: 0 !important;
+    }
+
+    #Indicator {
+        transform: none !important;
+        margin: 10px auto;
+    }
+}
+
